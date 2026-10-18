@@ -22,8 +22,7 @@ Criar e gerir contas e grupos, testar permissões de administração e produzir 
 ## Evidências
 - [Criação das contas](sessao4_desafio1_contas.png)
 - [Grupos e teste de alteração](sessao4_desafio2_grupos.png)
-- [Teste sudo — Alice](sessao4_desafio2_sudo_a.png)
-- [Teste sudo — Bruno](sessao4_desafio2_sudo_b.png)
+- [Teste sudo — Alice e Bruno](sessao4_desafio2_sudo.png)
 - [Relatório de auditoria](auditoria_contas.txt)
 
 ## Conclusão
