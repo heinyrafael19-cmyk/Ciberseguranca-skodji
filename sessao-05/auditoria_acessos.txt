@@ -1,0 +1,22 @@
+===== AUDITORIA DE ACESSOS — CVTECH Lda. =====
+Data: Tue Oct 20 11:36:44 -01 2026
+--- PASTAS DEPARTAMENTAIS ---
+total 16
+drwxrwx--- 2 root  financas 4096 Oct 19 18:12 financas
+drwxr-xr-x 2 root  root     4096 Oct 19 18:12 publico
+drwxrwx--- 2 root  rh       4096 Oct 19 18:31 rh
+drwxrwx--- 2 bruno ti       4096 Oct 19 18:12 ti
+total 4
+-rw-r----- 1 alice rh 39 Oct 19 18:31 confidencial.txt
+--- ESTADO DAS CONTAS ---
+alice P 2026-10-18 0 99999 7 -1
+bruno P 2026-10-18 0 99999 7 -1
+carla P 1970-01-01 0 90 7 30
+--- POLÍTICA DA CARLA ---
+Last password change					: password must be changed
+Password expires					: password must be changed
+Password inactive					: password must be changed
+Account expires						: never
+Minimum number of days between password change		: 0
+Maximum number of days between password change		: 90
+Number of days of warning before password expires	: 7
