@@ -1,0 +1,50 @@
+== Missão 1 ==
+Chave: C1-E86A62
+Pesquisa: ls -Ra arquivo
+Leitura: cat arquivo/2026/q2/ti/.nota_do_administrador
+Apoio utilizado: orientação passo a passo para listar ficheiros ocultos e ler a nota.
+== Missão 2 ==
+Total de linhas: 301
+Comando: wc -l ~/desafio_final/logs/servidor.log
+Linhas de ERRO: 42
+Comando: grep ' ERRO ' ~/desafio_final/logs/servidor.log | wc -l
+Linha CRITICO: 188
+Comando: grep -n ' CRITICO ' ~/desafio_final/logs/servidor.log
+Chave: C2-B8E799
+Apoio utilizado: orientação passo a passo sobre grep, pipes e contagem de linhas.
+== Missão 3 ==
+Permissões iniciais: 000; leitura recusada com Permission denied.
+Comando: chmod 640 ~/desafio_final/docs/relatorio_rh.txt
+Verificação: ls -l ~/desafio_final/docs/relatorio_rh.txt
+Permissões finais: -rw-r----- (640).
+Leitura: cat ~/desafio_final/docs/relatorio_rh.txt
+Chave: C3-58E898
+Apoio utilizado: orientação passo a passo sobre permissões e chmod.
+== Missão 4 ==
+Comando: sudo groupadd auditores
+Comando: sudo useradd -m -s /bin/bash -G auditores auditor
+Verificações: id auditor; getent passwd auditor; ls -ld /home/auditor
+Apoio utilizado: orientação passo a passo sobre criação de grupos e contas.
+uid=1004(auditor) gid=1008(auditor) groups=1008(auditor),1007(auditores)
+auditor:x:1004:1008::/home/auditor:/bin/bash
+drwxr-x--- 2 auditor auditor 4096 Oct 21 18:32 /home/auditor
+== Missão 5 ==
+Processo: /bin/bash /home/heyniler/desafio_final/ferramentas/indexador.sh
+PID observado: 755
+Consumo de CPU observado: 99.9%
+Identificação: ps aux --sort=-%cpu | head -n 6
+Terminação: kill 755 (SIGTERM)
+Consulta: cat ~/desafio_final/logs/indexador.log
+Resultado: Indexador terminado corretamente.
+Chave: C5-5D4420
+Apoio utilizado: orientação sobre identificação do processo e terminação com SIGTERM.
+== Missão 6 ==
+Password obtida na Missão 3.
+Decifrar: openssl enc -d -aes-256-cbc -pbkdf2 -in ~/desafio_final/cofre/cofre.tar.gz.enc -out ~/desafio_final/cofre/cofre.tar.gz
+Listar: tar -tzvf ~/desafio_final/cofre/cofre.tar.gz
+Criar destino: mkdir -p ~/desafio_final/cofre/restaurado
+Extrair: tar -xzf ~/desafio_final/cofre/cofre.tar.gz -C ~/desafio_final/cofre/restaurado
+Leitura: cat ~/desafio_final/cofre/restaurado/cofre_cvtech/chave.txt
+Resultado: Cofre aberto com sucesso.
+Chave: C6-565C9C
+Apoio utilizado: orientação passo a passo sobre decifragem e recuperação do backup.

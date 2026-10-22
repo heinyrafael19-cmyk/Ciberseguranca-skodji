@@ -1,0 +1,9 @@
+===== Verificação do Desafio Final — heyniler =====
+  [OK]  Missão 1 — Explorar: chave da nota oculta no relatório final
+  [OK]  Missão 2 — Filtrar: chave da linha CRITICO no relatório final
+  [OK]  Missão 3 — Permissões: relatorio_rh.txt com 640 (atual: 640) e chave no relatório
+  [OK]  Missão 4 — Contas: grupo auditores e conta auditor (pasta pessoal, bash, no grupo)
+  [OK]  Missão 5 — Processos: indexador terminado com SIGTERM e chave no relatório
+  [OK]  Missão 6 — Cofre: backup decifrado em cofre/restaurado e chave no relatório
+Resultado: 6/6 missões concluídas
+Parabéns! Desafio final concluído.
