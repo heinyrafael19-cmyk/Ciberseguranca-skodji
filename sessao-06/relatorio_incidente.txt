@@ -1,0 +1,19 @@
+===== RELATÓRIO DE INCIDENTE — CVTECH Lda. =====
+Data: Fri Oct 23 17:52:40 -01 2026
+--- CRONOLOGIA ---
+2026-10-23 11:36:00 INFO monitor iniciado
+2026-10-23 11:36:00 ERRO cvtech-sync não responde — CPU acima de 95%
+2026-10-23 11:54:06 INFO CPU normalizada — cvtech-sync.sh terminado
+Avisos registados: 677
+--- PROCESSOS cvtech AINDA ATIVOS ---
+--- TOP 5 DE CPU APÓS A INTERVENÇÃO ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root          91  0.0  0.1  34748 12196 ?        Ss   16:24   0:01 /usr/lib/systemd/systemd-udevd
+root          47  0.0  0.3  58868 24940 ?        S<s  16:24   0:00 /usr/lib/systemd/systemd-journald
+heyniler    1155  0.0  0.0  85392  7848 pts/2    Sl+  16:31   0:00 tail -f /home/heyniler/incidente/servidor.log
+root           1  0.0  0.1  24244 15496 ?        Ss   16:24   0:00 /sbin/init
+syslog       194  0.0  0.0 220548  6032 ?        Ssl  16:24   0:00 /usr/sbin/rsyslogd -n -iNONE
+--- CONCLUSÕES ---
+Identifiquei que o cvtech-sync.sh consumia quase 100% de CPU devido a um ciclo no script e terminei-o com SIGTERM.
+No teste repetido do cvtech-relatorio.sh, confirmei que ignorava SIGTERM e usei SIGKILL para o terminar.
+Recomendo corrigir os scripts e acompanhar o consumo de CPU com alertas para detetar problemas semelhantes.
