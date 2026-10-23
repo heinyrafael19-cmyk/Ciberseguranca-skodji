@@ -15,7 +15,7 @@ Portfólio do módulo Segurança Linux & Ops, do percurso Activation da Skodji D
 | [03](sessao-03/) | Pesquisa de texto, pipes e redirecionamentos | Filtragem de logs e gravação dos resultados em ficheiros. |
 | [04](sessao-04/) | Utilizadores e grupos | Criação de contas, associação a grupos e testes com sudo. |
 | [05](sessao-05/) | Permissões e autenticação | Configuração de acessos e políticas de palavras-passe. |
-| 06 | Processos e logs | A completar com as evidências da sessão. |
+| [06](sessao-06/) | Processos e logs | Monitorização e controlo de processos, diagnóstico do consumo de CPU, análise de logs e relatório do incidente. |
 | 07 | Backups e automação | A completar com as evidências da sessão. |
 | [08](sessao-08/) | Desafio final integrador | Recuperação do servidor simulado da CVTECH — 6/6 missões concluídas. |
 
