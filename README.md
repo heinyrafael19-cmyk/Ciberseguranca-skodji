@@ -16,7 +16,7 @@ Portfólio do módulo Segurança Linux & Ops, do percurso Activation da Skodji D
 | [04](sessao-04/) | Utilizadores e grupos | Criação de contas, associação a grupos e testes com sudo. |
 | [05](sessao-05/) | Permissões e autenticação | Configuração de acessos e políticas de palavras-passe. |
 | [06](sessao-06/) | Processos e logs | Monitorização e controlo de processos, diagnóstico do consumo de CPU, análise de logs e relatório do incidente. |
-| 07 | Backups e automação | A completar com as evidências da sessão. |
+| [07](sessao-07/) | Backups e automação | Concluída — criação e recuperação de backups comprimidos e cifrados, script Bash com verificação de erros e agendamento com cron. |
 | [08](sessao-08/) | Desafio final integrador | Recuperação do servidor simulado da CVTECH — 6/6 missões concluídas. |
 
 ## O que aprendi
